@@ -16,7 +16,7 @@ const Hero = () => (
     >
       <div className="flex justify-center items-center flex-col relative z-10">
         <motion.h1 variants={textVariant(1.1)} className={styles.heroHeading}>
-          Metaverse
+          DEBATE
         </motion.h1>
         <motion.div
           variants={textVariant(1.2)}
@@ -35,9 +35,9 @@ const Hero = () => (
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />
 
         <img
-          src="/cover.png"
+          src="/Debate1.jpg"
           alt="hero_cover"
-          className="w-full sm:h-[500px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
+          className="w-full sm:h-[600px] h-[350px] object-cover rounded-tl-[140px] z-10 relative"
         />
 
         <a href="#explore">
