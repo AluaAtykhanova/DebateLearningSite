@@ -7,22 +7,17 @@ export const exploreWorlds = [
   {
     id: 'world-2',
     imgUrl: '/Debate2.jpg',
-    title: 'The Upside Down',
-  },
-  {
-    id: 'world-3',
-    imgUrl: '/Debate4.jpg',
-    title: 'Kadirojo Permai',
+    title: 'Course for balapan',
   },
   {
     id: 'world-4',
     imgUrl: '/Debate5.jpg',
-    title: 'Paradise Island',
+    title: 'Debate clubs',
   },
   {
     id: 'world-5',
     imgUrl: '/Debate3.jpg',
-    title: 'Hawkins Labs',
+    title: 'Live lections',
   },
 ];
 
