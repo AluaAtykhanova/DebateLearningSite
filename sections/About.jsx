@@ -13,28 +13,28 @@ const About = () => (
       variants={staggerContainer}
       initial="hidden"
       whileInView="show"
-      viewport={{ once: false, amount: 0.25 }}
+      viewport={{ once: false, amount: 0.30 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col`}
     >
-      <TypingText title="| About Metaversus" textStyles="text-center" />
+      <TypingText title="| About Debateland" textStyles="text-center" />
 
       <motion.p
         variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[32px] text-[20px] text-center text-secondary-white"
       >
-        <span className="font-extrabold text-white">Metaverse</span> is a new
-        thing in the future, where you can enjoy the virtual world by feeling
-        like it's really real, you can feel what you feel in this metaverse
-        world, because this is really the{' '}
+        <span className="font-extrabold text-white">Debateland</span> это ваш источник 
+        всего необходимого для вхождения в мир дебатов. Наш сайт предоставляет {' '}
         <span className="font-extrabold text-white">
-          madness of the metaverse
-        </span>{' '}
-        of today, using only{' '}
-        <span className="font-extrabold text-white">VR</span> devices you can
-        easily explore the metaverse world you want, turn your dreams into
-        reality. Let's{' '}
-        <span className="font-extrabold text-white">explore</span> the madness
-        of the metaverse by scrolling down
+        курсы и статьи
+        </span>{', '}
+         которые помогут вам начать{' '}
+        <span className="font-extrabold text-white">с нуля</span>{'.'} Прекрасная помощница - 
+        <span className="font-extrabold text-white"> Аяу</span>, будет вашим <span className="font-extrabold text-white">ментором </span>
+         и надежным партнером в генерации топовых резолюций, обсуждении спорных аргументов и подборе качественных информационных ресурсов.  {' '}
+          Мы также предоставляем информацию о дебатных
+          клубах города Алматы и{' '}
+         <span className="font-extrabold text-white">рады приветствовать всех желающих</span> 
+         ! 
       </motion.p>
 
       <motion.img
