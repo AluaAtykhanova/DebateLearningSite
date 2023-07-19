@@ -2,22 +2,26 @@ export const exploreWorlds = [
   {
     id: 'world-1',
     imgUrl: '/Debate6.jpg',
-    title: 'Debate Chat',
+    title: 'Аяулым - Дебатный Ментор',
+    link: 'https://t.me/Ayaulym_Your_Debate_Mentor_bot',
   },
   {
     id: 'world-2',
     imgUrl: '/Debate2.jpg',
-    title: 'Course for balapan',
+    title: 'Курсы для балапанчиков',
+    link: 'localhost:3000',
   },
   {
     id: 'world-4',
     imgUrl: '/Debate5.jpg',
-    title: 'Debate clubs',
+    title: 'Дебатные клубы',
+    link: 'localhost:3000',
   },
   {
     id: 'world-5',
     imgUrl: '/Debate3.jpg',
-    title: 'Live lections',
+    title: 'Live Лекции',
+    link: 'localhost:3000',
   },
 ];
 
