@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: DebateLearningSite
+    runtime: docker
+    plan: free
+    repo: https://github.com/AluaAtykhanova/DebateLearningSite.git
+    region: frankfurt
+    branch: main
+    buildFilter:
+      paths:
+        - ./**
