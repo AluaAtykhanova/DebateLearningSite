@@ -52,7 +52,7 @@ const ExploreCard = ({
           href={link}
           target="_blank"
           rel="noreferrer"
-          className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white"     
+          className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white"
         >
           {title}
         </a>
