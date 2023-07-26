@@ -32,7 +32,7 @@ const ExploreCard = ({
     />
     {active !== id ? (
       <h3 className="font-semibold sm:text-[26px] text-[18px] text-gray-300 absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]">
-      {title}
+        {title}
       </h3>
     ) : (
       <div className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
@@ -46,17 +46,13 @@ const ExploreCard = ({
           />
         </div>
         <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase">
-          Enter Metaverse
+          Enter Debateland
         </p>
         <a
           href={link}
           target="_blank"
           rel="noreferrer"
-          className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white"
-          onClick={(e) => {
-            handleClick(id); // Вызываем обработчик для активации
-            window.open(link, '_blank'); // Открываем ссылку в новой вкладке
-          }}        
+          className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white"     
         >
           {title}
         </a>
