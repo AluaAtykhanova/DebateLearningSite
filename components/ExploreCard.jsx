@@ -20,6 +20,10 @@ const ExploreCard = ({
       active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
     } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
     onMouseEnter={() => handleClick(id)}
+    onClick={() => {
+      handleClick(id); // Вызываем обработчик для активации
+      window.open(link, '_blank'); // Открываем ссылку в новой вкладке
+    }}
   >
     <img
       src={imgUrl}
@@ -28,7 +32,7 @@ const ExploreCard = ({
     />
     {active !== id ? (
       <h3 className="font-semibold sm:text-[26px] text-[18px] text-gray-300 absolute z-0 lg:bottom-20 lg:rotate-[-90deg] lg:origin-[0,0]">
-        {title}
+      {title}
       </h3>
     ) : (
       <div className="absolute bottom-0 p-8 flex justify-start w-full flex-col bg-[rgba(0,0,0,0.5)] rounded-b-[24px]">
@@ -49,6 +53,10 @@ const ExploreCard = ({
           target="_blank"
           rel="noreferrer"
           className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white"
+          onClick={(e) => {
+            handleClick(id); // Вызываем обработчик для активации
+            window.open(link, '_blank'); // Открываем ссылку в новой вкладке
+          }}        
         >
           {title}
         </a>
