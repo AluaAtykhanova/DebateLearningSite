@@ -1,9 +1,9 @@
 'use client';
 
-const ComingSoon = ({ imgUrl, title, subtitle, index }) => (
+const ComingSoon = (
   <div
     className='mx-auto max-w-7xl'
-    style={{ color: "white", minHeight: "100vh" }}
+    style={{ color: 'white', minHeight: '100vh' }}
   >
     <div className="px-4 py-8 mx-auto max-w-screen-xl">
       <div className="mb-8 text-center">
