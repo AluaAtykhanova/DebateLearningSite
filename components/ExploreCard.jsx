@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import { motion } from 'framer-motion';
+import { motion } from "framer-motion";
 
-import styles from '../styles';
-import { fadeIn } from '../utils/motion';
+import styles from "../styles";
+import { fadeIn } from "../utils/motion";
 
 const ExploreCard = ({
   id,
@@ -15,14 +15,14 @@ const ExploreCard = ({
   handleClick,
 }) => (
   <motion.div
-    variants={fadeIn('right', 'spring', index * 0.5, 1)}
+    variants={fadeIn("right", "spring", index * 0.5, 1)}
     className={`relative ${
-      active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
+      active === id ? "lg:flex-[3.5] flex-[10]" : "lg:flex-[0.5] flex-[2]"
     } flex items-center justify-center min-w-[170px] h-[700px] transition-[flex] duration-[0.7s] ease-out-flex cursor-pointer`}
     onMouseEnter={() => handleClick(id)}
     onClick={() => {
       handleClick(id); // Вызываем обработчик для активации
-      window.open(link, '_blank'); // Открываем ссылку в новой вкладке
+      window.open(link, "_blank"); // Открываем ссылку в новой вкладке
     }}
   >
     <img
@@ -40,7 +40,7 @@ const ExploreCard = ({
           className={`${styles.flexCenter} w-[60px] h-[60px] rounded-[24px] glassmorphism mb-[16px]`}
         >
           <img
-            src="/headset.svg"
+            src="/speech.png"
             alt="headset"
             className="w-1/2 h-1/2 object-contain"
           />
@@ -48,14 +48,9 @@ const ExploreCard = ({
         <p className="font-normal text-[16px] leading-[20.16px] text-white uppercase">
           Enter Debateland
         </p>
-        <a
-          href={link}
-          target="_blank"
-          rel="noreferrer"
-          className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white"
-        >
+        <p className="mt-[24px] font-semibold sm:text-[32px] text-[24px] text-white">
           {title}
-        </a>
+        </p>
       </div>
     )}
   </motion.div>
