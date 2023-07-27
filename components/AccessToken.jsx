@@ -1,8 +1,10 @@
 import { useSession } from 'next-auth/react';
 
-export default function Component() {
+const Component = () => {
   const { data } = useSession();
   const { accessToken } = data;
 
   return <div>Access Token: {accessToken}</div>;
-}
+};
+
+export default Component;

@@ -21,9 +21,13 @@ export default NextAuth({
       return updatedToken;
     },
     async session({ session, token }) {
+      // Создайте новый объект, чтобы избежать прямого изменения параметра функции.
+      const updatedSession = { ...session };
+
       // Send properties to the client, like an access_token from a provider.
-      session.accessToken = token.accessToken;
-      return session;
+      updatedSession.accessToken = token.accessToken;
+
+      return updatedSession;
     },
   },
 });
