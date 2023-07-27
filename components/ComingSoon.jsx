@@ -2,7 +2,7 @@
 
 const ComingSoon = (
   <div
-    className='mx-auto max-w-7xl'
+    className="mx-auto max-w-7xl"
     style={{ color: 'white', minHeight: '100vh' }}
   >
     <div className="px-4 py-8 mx-auto max-w-screen-xl">
