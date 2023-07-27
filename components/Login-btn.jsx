@@ -16,6 +16,6 @@ const Component = () => {
       <button type="button" onClick={() => signIn()}>Sign in</button>
     </>
   );
-}
+};
 
 export default Component;
