@@ -1,6 +1,6 @@
 'use client';
 
-const ComingSoon = (
+const ComingSoon = () => (
   <div
     className="mx-auto max-w-7xl"
     style={{ color: 'white', minHeight: '100vh' }}
