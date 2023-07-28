@@ -9,7 +9,7 @@ export const exploreWorlds = [
     id: "world-2",
     imgUrl: "/Debate2.jpg",
     title: "Курсы для балапанчиков",
-    link: "https://debateland.vercel.app/comingSoon/ComingSoon",
+    link: "localhost:3000/comingSoon/ComingSoon",
   },
   {
     id: "world-4",
