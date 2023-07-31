@@ -1,6 +1,8 @@
+'use client';
+
 import { useSession, signIn, signOut } from 'next-auth/react';
 
-const Component = () => {
+const LoginBtn = () => {
   const { data: session } = useSession();
   if (session) {
     return (
@@ -18,4 +20,4 @@ const Component = () => {
   );
 };
 
-export default Component;
+export default LoginBtn;
