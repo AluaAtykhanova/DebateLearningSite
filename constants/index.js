@@ -8,8 +8,8 @@ export const exploreWorlds = [
   {
     id: "world-2",
     imgUrl: "/Debate2.jpg",
-    title: "Курсы для балапанчиков",
-    link: "localhost:3000/comingSoon/ComingSoon",
+    title: "Курсы для новичков",
+    link: "/comingSoon/ComingSoon",
   },
   {
     id: "world-4",
@@ -21,7 +21,7 @@ export const exploreWorlds = [
     id: "world-5",
     imgUrl: "/Debate3.jpg",
     title: "Live Лекции",
-    link: "localhost:3000",
+    link: "/comingSoon/ComingSoon",
   },
 ];
 
