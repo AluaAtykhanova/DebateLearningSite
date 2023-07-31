@@ -6,6 +6,8 @@ import NewFeatures from './NewFeatures';
 import InsightCard from './InsightCard';
 import Footer from './Footer';
 import ComingSoon from './ComingSoon';
+import LoginBtn from './Login-btn';
+import AccessToken from './AccessToken'
 
 export {
   Navbar,
@@ -17,4 +19,6 @@ export {
   InsightCard,
   Footer,
   ComingSoon,
+  LoginBtn,
+  AccessToken,
 };
