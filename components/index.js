@@ -7,7 +7,7 @@ import InsightCard from './InsightCard';
 import Footer from './Footer';
 import ComingSoon from './ComingSoon';
 import LoginBtn from './Login-btn';
-import AccessToken from './AccessToken'
+import AccessToken from './AccessToken';
 
 export {
   Navbar,

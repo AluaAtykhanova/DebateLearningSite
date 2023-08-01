@@ -1,33 +1,21 @@
 import NextAuth from 'next-auth';
 import GoogleProvider from 'next-auth/providers/google';
+require('dotenv').config();
 
 export default NextAuth({
   providers: [
     GoogleProvider({
-      clientId: process.env.GOOGLE_ID,
-      clientSecret: process.env.GOOGLE_SECRET,
+      clientId: process.env.GOOGLE_CLIENT_ID,
+      clientSecret: process.env.GOOGLE_CLIENT_SECRET,
     }),
   ],
-  callbacks: {
-    async jwt({ token, account }) {
-      // Создайте новый объект, чтобы избежать прямого изменения параметра функции.
-      const updatedToken = { ...token };
-
-      // Persist the OAuth access_token to the updatedToken right after signin
-      if (account) {
-        updatedToken.accessToken = account.access_token;
-      }
-
-      return updatedToken;
-    },
-    async session({ session, token }) {
-      // Создайте новый объект, чтобы избежать прямого изменения параметра функции.
-      const updatedSession = { ...session };
-
-      // Send properties to the client, like an access_token from a provider.
-      updatedSession.accessToken = token.accessToken;
-
-      return updatedSession;
-    },
-  },
+  secret: process.env.JWT_SECRET,
+   callbacks: {
+      async signIn({ account, profile }) {
+        if (account.provider === "google") {
+          return profile.email_verified //&& profile.email.endsWith("@gmail.com")
+        }
+        return true // Do different verification for other providers that don't have `email_verified`
+      },
+    }
 });
