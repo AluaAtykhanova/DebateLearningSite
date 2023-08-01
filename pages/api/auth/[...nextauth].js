@@ -13,10 +13,10 @@ export default NextAuth({
   secret: process.env.JWT_SECRET,
   callbacks: {
     async signIn({ account, profile }) {
-       if (account.provider === 'google') {
-         return profile.email_verified; // && profile.email.endsWith("@gmail.com")
-       }
-       return true; // Do different verification for other providers that don't have `email_verified`
-     },
-   },
+      if (account.provider === 'google') {
+        return profile.email_verified; // && profile.email.endsWith("@gmail.com")
+      }
+      return true; // Do different verification for other providers that don't have `email_verified`
+    },
+  },
 });

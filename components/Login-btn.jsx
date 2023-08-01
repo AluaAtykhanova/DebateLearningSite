@@ -14,12 +14,12 @@ const LoginBtn = () => {
 
   if (session) {
     return (
-       <button type="button" onClick={() => signOut()} style={buttonStyles}>Sign out</button>
+      <button type="button" onClick={() => signOut()} style={buttonStyles}>Sign out</button>
     );
   }
 
   return (
-     <button type="button" onClick={() => signIn()} style={buttonStyles}>Sign in</button>
+    <button type="button" onClick={() => signIn()} style={buttonStyles}>Sign in</button>
   );
 };
 
