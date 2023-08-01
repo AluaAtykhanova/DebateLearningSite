@@ -19,7 +19,7 @@ const LoginBtn = () => {
   }
 
   return (
-    <button type="button" onClick={() => signIn("google")} style={buttonStyles}>Sign in</button>
+    <button type="button" onClick={() => signIn('google')} style={buttonStyles}>Sign in</button>
   );
 };
 
