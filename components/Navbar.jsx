@@ -31,7 +31,7 @@ const Navbar = () => (
       </h2>
       <LoginBtn />
     </div>
-    <div className="absolute w-[50%] inset-0 gradient-01 " style={{ pointerEvents: 'none' }}></div>
+    <div className="absolute w-[50%] inset-0 gradient-01 " style={{ pointerEvents: 'none' }} />
   </motion.nav>
 );
 
