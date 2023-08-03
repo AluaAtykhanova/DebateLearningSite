@@ -26,11 +26,11 @@ const Navbar = () => (
           />
         </Link>
       </div>
-        <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
-          <Link href="/">DEBATELAND</Link>
-        </h2>
-        <LoginBtn />
-      </div>
+      <h2 className="font-extrabold text-[24px] leading-[30.24px] text-white">
+        <Link href="/">DEBATELAND</Link>
+      </h2>
+      <LoginBtn />
+    </div>
     <div className="absolute w-[50%] inset-0 gradient-01 " style={{ pointerEvents: 'none' }}></div>
   </motion.nav>
 );
