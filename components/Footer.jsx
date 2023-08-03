@@ -8,7 +8,7 @@ import { footerVariantsMobile, footerVariants } from '../utils/motion';
 
 const Footer = () => (
   <motion.footer
-    variants={(typeof window === "undefined" ? 1000 : window.innerWidth) > 1000 ? footerVariants : footerVariantsMobile}
+    variants={(typeof window === 'undefined' ? 1000 : window.innerWidth) > 1000 ? footerVariants : footerVariantsMobile}
     initial="hidden"
     whileInView="show"
     className={`${styles.xPaddings} py-8 relative`}
