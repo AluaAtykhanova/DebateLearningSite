@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 import styles from "../styles";
-import { slideIn, staggerContainer, textVariant } from "../utils/motion";
+import { slideIn,slideInMobile, staggerContainer, textVariant } from "../utils/motion";
 
 const Hero = () => (
   <section className={`${styles.yPaddings} sm:pl-16 pl-6`}>
@@ -29,7 +29,7 @@ const Hero = () => (
       </div>
 
       <motion.div
-        variants={(typeof window === "undefined" ? 1000 : window.innerWidth) > 1000 ? slideIn("right", "tween", 0.2, 1) : slideIn("right", "tween", 0, 0)}
+        variants={(typeof window === "undefined" ? 1000 : window.innerWidth) > 1000 ? slideIn("right", "tween", 0.2, 1) : slideInMobile("right", "tween", 0, 0)}
         className="relative w-full md:-mt-[20px] -mt-[12px]"
       >
         <div className="absolute w-full h-[300px] hero-gradient rounded-tl-[140px] z-[0] -top-[30px]" />

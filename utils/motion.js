@@ -27,6 +27,19 @@ export const slideIn = (direction, type, delay, duration) => ({
   },
 });
 
+export const slideInMobile = (direction, type, delay, duration) => ({
+  show: {
+    x: 0,
+    y: 0,
+    transition: {
+      type,
+      delay,
+      duration,
+      ease: "easeOut",
+    },
+  },
+});
+
 export const staggerContainer = (staggerChildren, delayChildren) => ({
   hidden: {},
   show: {
