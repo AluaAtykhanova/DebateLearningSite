@@ -9,7 +9,7 @@ export const exploreWorlds = [
     id: "world-2",
     imgUrl: "/Debate2.jpg",
     title: "Курсы для новичков",
-    link: "/comingSoon/ComingSoon",
+    link: "/course/Video",
   },
   {
     id: "world-4",

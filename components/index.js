@@ -8,6 +8,8 @@ import Footer from './Footer';
 import ComingSoon from './ComingSoon';
 import LoginBtn from './Login-btn';
 import AccessToken from './AccessToken';
+import Video from './TestVideoDeleteAfterIncubator';
+
 
 export {
   Navbar,
@@ -21,4 +23,5 @@ export {
   ComingSoon,
   LoginBtn,
   AccessToken,
+  Video,
 };
