@@ -10,7 +10,6 @@ import LoginBtn from './Login-btn';
 import AccessToken from './AccessToken';
 import Video from './TestVideoDeleteAfterIncubator';
 
-
 export {
   Navbar,
   TitleText,

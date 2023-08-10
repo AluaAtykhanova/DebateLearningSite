@@ -1,4 +1,4 @@
-import { Navbar, ComingSoon, Video } from '../../components';
+import { Navbar, Video } from '../../components';
 
 const Home = () => (
   <div className="bg-primary-black overflow-hidden">

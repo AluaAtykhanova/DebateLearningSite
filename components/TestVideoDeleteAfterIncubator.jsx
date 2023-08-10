@@ -94,11 +94,11 @@ const Video = () => (
           <h3 className="text-xl mb-2">Видео 1</h3>
         </div>
         <div className="bg-gray-800 p-4 rounded-md">
-        <img
-          src="/Debate3.jpg"
-          alt="Формат игры в Дебаты"
-          className="w-full h-auto rounded-md"
-        />
+          <img
+            src="/Debate3.jpg"
+            alt="Формат игры в Дебаты"
+            className="w-full h-auto rounded-md"
+          />
           <h3 className="text-xl mb-2">Видео 2</h3>
         </div>
         <div className="bg-gray-800 p-4 rounded-md">

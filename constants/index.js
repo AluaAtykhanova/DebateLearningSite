@@ -15,7 +15,7 @@ export const exploreWorlds = [
     id: "world-4",
     imgUrl: "/Debate5.jpg",
     title: "Дебатные клубы",
-    link: "https://t.me/almatydebatecenter",
+    link: "/comingSoon/ComingSoon",
   },
   {
     id: "world-5",
