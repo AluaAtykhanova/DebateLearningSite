@@ -143,7 +143,7 @@ const Video = () => {
         </div>
       </div>
     </div>
-    );
+  );
 };
 
 export default Video;
