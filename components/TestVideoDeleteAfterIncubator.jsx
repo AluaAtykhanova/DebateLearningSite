@@ -1,35 +1,17 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
-
-const Video = () => {
-  const [windowWidth, setWindowWidth] = useState(
-    typeof window !== 'undefined' ? window.innerWidth : 500,
-  );
-
-  useEffect(() => {
-    const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener('resize', handleResize);
-
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  return (
-    <div className="mx-auto max-w-7xl" style={{ color: 'white', minHeight: '100vh' }}>
-      <div className="px-4 py-8 mx-auto max-w-screen-xl">
-        <div className="mb-8 text-center">
-          <img src="/icon_white.png" alt="N17R" className="w-20 mx-auto" />
-          <h2 className="mt-2 text-3xl font-bold md:text-4xl">
-            nFactorial Incubator 2023
-          </h2>
-        </div>
-        <div className="mt-2 text-xl text-center md:text-3xl">Coming soon</div>
-        <div className={`mt-8 ${windowWidth >= 820 ? 'grid grid-cols-5 gap-4' : 'flex md:flex-row flex-col gap-4'}`}>
+const Video = () => (
+  <div className="mx-auto max-w-7xl" style={{ color: 'white', minHeight: '100vh' }}>
+    <div className="px-4 py-8 mx-auto max-w-screen-xl">
+      <div className="mb-8 text-center">
+        <img src="/icon_white.png" alt="N17R" className="w-20 mx-auto" />
+        <h2 className="mt-2 text-3xl font-bold md:text-4xl">
+          nFactorial Incubator 2023
+        </h2>
+      </div>
+      <div className="mt-2 text-xl text-center md:text-3xl">Coming soon</div>
+      <div className="flex flex-col md:flex-row gap-4">
+        <div className="flex-1">
           <div className="bg-gray-800 p-4 rounded-md">
             <a
               href="https://www.youtube.com/watch?v=FY6U5JZmib0&ab_channel=lenagotlib"
@@ -100,6 +82,8 @@ const Video = () => {
             </a>
             <h3 className="text-xl mb-2">Формат Дебат (АПФ)</h3>
           </div>
+        </div>
+        <div className="flex-1">
           <div className="bg-gray-800 p-4 rounded-md">
             <img
               src="/Debate5.jpg"
@@ -143,7 +127,7 @@ const Video = () => {
         </div>
       </div>
     </div>
-  );
-};
+  </div>
+);
 
 export default Video;
