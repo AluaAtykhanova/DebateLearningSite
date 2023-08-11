@@ -3,8 +3,8 @@
 import React, { useState, useEffect } from 'react';
 
 const Video = () => {
-  const [windowWidth, setWindowWidth] = useState(
-    typeof window !== 'undefined' ? window.innerWidth : 900
+  const setWindowWidth = useState(
+    typeof window !== 'undefined' ? window.innerWidth : 900,
   );
 
   useEffect(() => {
@@ -20,10 +20,7 @@ const Video = () => {
   }, []);
 
   return (
-    <div
-      className="mx-auto max-w-7xl"
-      style={{ color: 'white', minHeight: '100vh' }}
-    >
+    <div className="mx-auto max-w-7xl"  style={{ color: 'white', minHeight: '100vh' }}>
       <div className="px-4 py-8 mx-auto max-w-screen-xl">
         <div className="mb-8 text-center">
           <img src="/icon_white.png" alt="N17R" className="w-20 mx-auto" />
@@ -35,9 +32,9 @@ const Video = () => {
         <div className={(typeof window === "undefined" ? 900 : window.innerWidth) >= 900 ? "mt-8 grid grid-cols-5 gap-4" : "mt-8 grid-cols-2 md:flex gap-4"}>
           <div className="bg-gray-800 p-4 rounded-md">
             <a
-              href="https://www.youtube.com/watch?v=FY6U5JZmib0&ab_channel=lenagotlib"
-              target="_blank"
-              rel="noopener noreferrer"
+              href='https://www.youtube.com/watch?v=FY6U5JZmib0&ab_channel=lenagotlib'
+              target='_blank'
+              rel='noopener noreferrer'
             >
               <img
                 src="/Debate5.jpg"
