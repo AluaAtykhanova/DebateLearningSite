@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 const Video = () => {
   const [windowWidth, setWindowWidth] = useState(
-    typeof window !== 'undefined' ? window.innerWidth : 900,
+    typeof window !== 'undefined' ? window.innerWidth : 800,
   );
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Video = () => {
           </h2>
         </div>
         <div className="mt-2 text-xl text-center md:text-3xl">Coming soon</div>
-        <div className={`mt-8 ${windowWidth >= 900 ? 'grid grid-cols-5 gap-4' : 'grid-cols-2 md:flex gap-4'}`}>
+        <div className={`mt-8 ${windowWidth >= 820 ? 'grid grid-cols-5 gap-4' : 'flex md:flex-row flex-col gap-4'}`}>
           <div className="bg-gray-800 p-4 rounded-md">
             <a
               href="https://www.youtube.com/watch?v=FY6U5JZmib0&ab_channel=lenagotlib"
