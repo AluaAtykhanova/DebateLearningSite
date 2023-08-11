@@ -1,4 +1,5 @@
 'use client';
+
 import React, { useState, useEffect } from 'react';
 
 const Video = () => {
@@ -18,13 +19,11 @@ const Video = () => {
     };
   }, []);
 
-  const isMobile = windowWidth < 900;
   return (
     <div
       className="mx-auto max-w-7xl"
       style={{ color: 'white', minHeight: '100vh' }}
     >
-      
       <div className="px-4 py-8 mx-auto max-w-screen-xl">
         <div className="mb-8 text-center">
           <img src="/icon_white.png" alt="N17R" className="w-20 mx-auto" />
@@ -33,7 +32,6 @@ const Video = () => {
           </h2>
         </div>
         <div className="mt-2 text-xl text-center md:text-3xl">Coming soon</div>
-
         <div className={(typeof window === "undefined" ? 900 : window.innerWidth) >= 900 ? "mt-8 grid grid-cols-5 gap-4" : "mt-8 grid-cols-2 md:flex gap-4"}>
           <div className="bg-gray-800 p-4 rounded-md">
             <a
