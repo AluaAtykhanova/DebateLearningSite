@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 
 const Video = () => {
   const [windowWidth, setWindowWidth] = useState(
-    typeof window !== 'undefined' ? window.innerWidth : 800,
+    typeof window !== 'undefined' ? window.innerWidth : 500,
   );
 
   useEffect(() => {
